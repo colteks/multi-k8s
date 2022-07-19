@@ -21,7 +21,6 @@ script:
   - docker run -e CI=true colteks01/react-test npm test
   
 deploy:
-  skip_cleanup: true      
   provider: script
   script: bash ./deploy.sh
   on: 
